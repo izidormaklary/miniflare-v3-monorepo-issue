@@ -12,6 +12,7 @@ try {
     target: "es2020",
     conditions: ["worker", "browser"],
     entryPoints: ["src/index.ts"],
+    external:["cloudflare:sockets"],
     outdir: "dist",
     resolveExtensions: [".mts", ".mjs", ".ts", ".js", ".json"],
     outExtension: { ".js": ".mjs" },
