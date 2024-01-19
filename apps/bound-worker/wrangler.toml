@@ -1,0 +1,9 @@
+account_id = ""
+compatibility_date = "2023-12-18"
+
+logpush = true
+main = "./dist/index.mjs"
+workers_dev = true
+bindings = [{name = "BINDING", class_name = "Binding"}]
+
+name = "worker-one"

@@ -1,0 +1,16 @@
+{
+  "name": "worker-one",
+  "type": "module",
+  "scripts": {
+    "build": "node ../../build-worker.js"
+  },
+  "dependencies": {
+    "wrangler": "3.15.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1"
+  },
+  "volta": {
+    "extends": "../../package.json"
+  }
+}

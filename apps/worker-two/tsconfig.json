@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
+  "compilerOptions": {
+    "module": "esnext",
+    "incremental": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "target": "es2020",
+    "lib": ["dom", "es2022", "DOM.Iterable"],
+    "noImplicitAny": true,
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "types": ["../../node_modules/@cloudflare/workers-types"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "preserveSymlinks": true
+  },
+  "include": ["src/**/*"],
+  "ts-node": {
+    "files": true,
+    "esm": true
+  }
+}

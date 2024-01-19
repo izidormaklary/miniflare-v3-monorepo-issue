@@ -1,0 +1,21 @@
+{
+  "name": "miniflare-v3-monorepo-issue",
+  "packageManager": "yarn@3.4.1",
+  "type": "module",
+  "scripts": {
+    "build": "yarn workspaces foreach  run build",
+    "start": "yarn build && yarn workspace local-workers run start"
+  },
+  "dependencies": {
+    "cloudflare-workers-compat": "^0.1.15",
+    "esbuild": "^0.15.18",
+    "typescript": "^5.0"
+  },
+  "volta": {
+    "node": "20.10.0",
+    "npm": "8.19.3"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
