@@ -12,12 +12,12 @@
     "noImplicitAny": true,
     "moduleResolution": "bundler",
     "sourceMap": true,
-    "types": ["../../node_modules/@cloudflare/workers-types"],
+    "types": ["@cloudflare/workers-types"],
     "allowJs": true,
     "skipLibCheck": true,
     "preserveSymlinks": true
   },
-  "include": ["./**/*"],
+  "include": ["./**/*", "miniflare-setup.ts"],
   "ts-node": {
     "files": true,
     "esm": true
